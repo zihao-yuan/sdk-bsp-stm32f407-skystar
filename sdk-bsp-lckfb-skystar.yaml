@@ -1,0 +1,122 @@
+yaml_version: 3
+pkg_version: 1.0.0
+pkg_vendor: LCKFB
+pkg_type: Board_Support_Packages
+board:
+  buy_url_cn: https://lckfb.com/project/detail/lckfb-lspi-skystar-stm32f407vet6-lite?param=baseInfo
+  buy_url_global: N/A
+  debug_interface: SWD
+  debugger: DAP-LINK
+  description_en: SkyStar STM32F407 development board is a cost-effective development tool crafted by Litron Development Boards, designed with full consideration of compatibility with a wide range of microcontrollers in 100-pin packages. This design makes it not only suitable for specific chips, but also able to adapt to a wide range of 100-pin microcontrollers produced by different manufacturers on the market, greatly improving the scope of application and flexibility. This SDK supports SkyStar STM32F407 version.Translated with www.DeepL.com/Translator (free version)
+  description_zh: 天空星STM32F407开发板是由立创开发板精心打造的一款高性价比的开发工具，设计上充分考虑了与多种100脚封装的单片机的兼容性。这种设计使得它不仅适用于特定的芯片，还能够适配市场上多种不同厂家生产的100脚微控制器，极大地提高了适用范围和灵活性。本SDK支持天空星STM32F407版本。
+  emulator_machine: ''
+  large_image: docs/images/board.jpg
+  name: STM32F407-LCKFB-SKYSTAR
+  price_cn: 39.9 CNY
+  price_global: N/A USD
+  sale_contact_cn: N/A
+  sale_contact_global: N/A
+  small_image: docs/images/board-small.jpg
+  vendor: STMicroelectronics
+  version: 1.0
+chip:
+  chip_name: STM32F407VGTx
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  series_name: STM32F4
+  source_freq: '8000000'
+  sub_series_name: STM32F407
+  target_freq: '168000000'
+  tx_name: PA9
+  rx_name: PA10
+  uart_name: UART1
+docs:
+- file: docs/立创梁山派·天空星开发板原理图.pdf
+  title: 立创梁山派·天空星开发板原理图
+  category: other
+- file: docs/立创梁山派·天空星-硬件文档.pdf
+  title: 立创梁山派·天空星-硬件文档
+  category: other
+features:
+- 'Flash:512KB/1024KB(Youth Edition/High-end Edition)'
+- 'SRAM:196KB (including 64KB CCM)'
+- '16MB NorFlash (only High-end version)'
+- 'TF Card holder'
+- 'JLC Multi-color Silkscreen'
+- 'Hardware compatible with a variety of 100-pin chips at home and abroad'
+- 'Triple reference voltage source options to meet higher ADC acquisition needs of users'
+- 'Multi-circuit protection, over-voltage protection, over-current protection, 5V anti-reverse connection'
+- 'Hierarchical schematics for visualizing resources'
+- 'Leads to 70PIN available IO, meets a variety of project development, suitable for college students electronic competitions, prototyping and DIY design'
+features_zh:
+- 'Flash:512KB/1024KB(青春版/高配版)'
+- 'SRAM:196KB (包括 64KB 的 CCM)'
+- '16MB NorFlash（高配版才有）'
+- 'TF 卡座'
+- '嘉立创彩色丝印加持，更直观寻找引脚'
+- '硬件兼容国内外多种100脚芯片'
+- '三路基准电压源可选，满足用户更高的ADC采集需求'
+- '多重电路保护，过压保护，过流保护，5V防反接'
+- '层次化原理图，直观查看资源'
+- '引出70PIN可用IO，满足多种项目开发，适合大学生电子竞赛，原型开发和DIY设计'
+template_projects:
+- builtin_files:
+  - source_path_offset: projects/01_led_blink
+    target_path_offset: ''
+    files_and_folders:
+    - "*"
+  - source_path_offset: ''
+    target_path_offset: ''
+    files_and_folders:
+    - libraries
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: 5.1.0
+    source_path_offset: ''
+    target_path_offset: rt-thread
+  project_description: LED 闪烁示例
+  project_name: led_blink
+  project_type: rt-thread|@full|@5.1.0
+example_projects:
+- project_name: led_blink
+  project_description: LED 闪烁示例
+  project_type: rt-thread|@full|@5.1.0
+  builtin_files:
+  - source_path_offset: projects/01_led_blink
+    target_path_offset: ''
+    files_and_folders:
+    - "*"
+  - source_path_offset: ''
+    target_path_offset: ''
+    files_and_folders:
+    - libraries
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: 5.1.0
+    source_path_offset: ''
+    target_path_offset: rt-thread
